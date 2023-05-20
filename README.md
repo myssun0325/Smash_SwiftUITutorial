@@ -2,7 +2,7 @@
 
 > 스유 공식 튜토리얼 뽀개기
 
-[애플 공식 SwiftUI 튜토리얼]([https://developer.apple.com/tutorials/app-dev-training](https://developer.apple.com/tutorials/app-dev-training))
+[애플 공식 SwiftUI 튜토리얼](https://developer.apple.com/tutorials/swiftui)
 
 # 모집 마감되었습니다.
 
