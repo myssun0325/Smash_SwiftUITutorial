@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CircleImage: View {
+    var image: Image
+
     var body: some View {
 //        VStack {
-            Image("turtlerock")
+            image
                 .clipShape(Circle()) /* 일종의 mask 기능. Shape protocol은 path function을 구현하면 된다. Path를 이용해서 원하는 Shape 을 만들 수 있다. */
                 .overlay {
                     Circle().stroke(.white, lineWidth: 4)
@@ -24,7 +26,7 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image: Image("turtlerock"))
     }
 }
 
