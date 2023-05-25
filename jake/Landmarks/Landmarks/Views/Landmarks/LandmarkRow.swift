@@ -19,11 +19,18 @@ struct LandmarkRow: View {
             Text(landmark.name)
 
             Spacer()
+
+            if landmark.isFavorite { /* SwiftUI block 안에서 if statement를 사용해서 뷰 내부의 상태를 컨트롤 할 수 있다. */
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow) /* system image는 vector 기반이라 색을 변경할 수 있다. */
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])

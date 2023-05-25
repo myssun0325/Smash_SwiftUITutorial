@@ -16,6 +16,7 @@ struct ContentView: View { /* View protocol은 View를 리턴하는 body 라는 
 struct ContentView_Previews: PreviewProvider { /* View의 preview를 담당하는 프로토콜로 View를 리턴하는 static computed property 인 previews를 가지고 있다. */
     static var previews: some View { /* Canvas에 그릴 View를 정의할 수 있다. */
         ContentView()
+            .environmentObject(ModelData())
     }
 }
 

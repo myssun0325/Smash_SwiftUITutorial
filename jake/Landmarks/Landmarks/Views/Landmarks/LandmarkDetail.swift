@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
 
     var body: some View { /* body property내에서 content, layout, 그리고 behavior를 작성한다. 하지만 오직 View 한 개를 반환하기 때문에 리턴할 때 여러 뷰를 그룹화 시켜서 만들어야 한다. */
         ScrollView {
@@ -22,12 +27,16 @@ struct LandmarkDetail: View {
                 .padding(.bottom, -130)
 
             VStack(alignment: .leading) { /* 기본값은 .center */
-                Text(landmark.name)
-                    /* 모든 modifier들은 변경에 맞게 새로운 view를 리턴한다.
-                     여러 modifier들이 chain되어 위에서부터 아래 코드대로 쌓인다.
-                     작성한 코드는 항상 view에 대해 source of truth 하다. 따라서 modifier를 수정하거나 추가 및 삭제를 할 때마다 바로 그 내용에 맞게 반영된다. */
-                    .font(.title) /* font modifier */
-    //                .foregroundColor(.green)
+                HStack {
+                    Text(landmark.name)
+                        /* 모든 modifier들은 변경에 맞게 새로운 view를 리턴한다.
+                         여러 modifier들이 chain되어 위에서부터 아래 코드대로 쌓인다.
+                         작성한 코드는 항상 view에 대해 source of truth 하다. 따라서 modifier를 수정하거나 추가 및 삭제를 할 때마다 바로 그 내용에 맞게 반영된다. */
+                        .font(.title) /* font modifier */
+        //                .foregroundColor(.green)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
+
                 HStack {
                     Text(landmark.park)
                     Spacer()
@@ -50,7 +59,10 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: ModelData().landmarks[0])
+            .environmentObject(modelData)
     }
 }

@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import Combine
 
-var landmarks: [Landmark] = load("landmarkData.json")
+final class ModelData: ObservableObject { /* SwiftUI가 subscribe 하는 객체. 해당 객체가 변경되면 어떤 뷰던지 refreshing이 필요하면 갱신된다. */
+    @Published var landmarks: [Landmark] = load("landmarkData.json") /* subscriber가 변화를 감지할 수 있도록 data 변화를 publishing 할 수 있도록 함 */
+}
+
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
