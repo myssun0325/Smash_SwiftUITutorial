@@ -18,6 +18,7 @@
 		9067D74C2A203791007CBCEC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067D74B2A203791007CBCEC /* Data.swift */; };
 		9067D7502A203D93007CBCEC /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067D74F2A203D93007CBCEC /* LandmarkRow.swift */; };
 		9067D7532A203F8C007CBCEC /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067D7522A203F8C007CBCEC /* LandmarkList.swift */; };
+		9067D7572A204074007CBCEC /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067D7562A204074007CBCEC /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9067D74B2A203791007CBCEC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		9067D74F2A203D93007CBCEC /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		9067D7522A203F8C007CBCEC /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		9067D7562A204074007CBCEC /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9067D7542A203FBA007CBCEC /* List */,
+				9067D7552A204066007CBCEC /* Detail */,
 				9067D7422A20347A007CBCEC /* MapView.swift */,
 				9067D7402A2033F6007CBCEC /* CircleImage.swift */,
 			);
@@ -126,6 +129,14 @@
 				9067D74F2A203D93007CBCEC /* LandmarkRow.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		9067D7552A204066007CBCEC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9067D7562A204074007CBCEC /* LandmarkDetail.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				9067D74C2A203791007CBCEC /* Data.swift in Sources */,
 				9067D7432A20347A007CBCEC /* MapView.swift in Sources */,
 				9067D7532A203F8C007CBCEC /* LandmarkList.swift in Sources */,
+				9067D7572A204074007CBCEC /* LandmarkDetail.swift in Sources */,
 				9067D7332A2031DA007CBCEC /* LandmarksApp.swift in Sources */,
 				9067D7412A2033F6007CBCEC /* CircleImage.swift in Sources */,
 				9067D7502A203D93007CBCEC /* LandmarkRow.swift in Sources */,
