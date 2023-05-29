@@ -54,7 +54,6 @@
 		87C4A0EB2A24C3F000F0046C /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 87AB60372A21DB3A005A2AA3 /* hikeData.json */; };
 		87C4A0EC2A24C3F000F0046C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8784C5B02A20EEB200462020 /* landmarkData.json */; };
 		87C4A0ED2A24C3F000F0046C /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87421AB82A1CDF250038D1CB /* LandmarksApp.swift */; };
-		87C4A0EE2A24C3F000F0046C /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767660A2A20FA9600061D3E /* LandmarkList.swift */; };
 		87C4A0EF2A24C3F000F0046C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA43FD2A1CF4800076F957 /* CircleImage.swift */; };
 		87C4A0F12A24C49D00F0046C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A0F02A24C49D00F0046C /* LandmarkDetail.swift */; };
 		87C4A0F32A24C78900F0046C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A0F22A24C78900F0046C /* NotificationView.swift */; };
@@ -77,6 +76,7 @@
 		87C4A1162A24CE3600F0046C /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 87AB60372A21DB3A005A2AA3 /* hikeData.json */; };
 		87C4A1172A24CE3600F0046C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA43FF2A1CF4FC0076F957 /* MapView.swift */; };
 		87C4A1192A24CEBD00F0046C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A1182A24CEBD00F0046C /* LandmarkDetail.swift */; };
+		87C4A11C2A24D30900F0046C /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4A11B2A24D30900F0046C /* LandmarkList.swift */; };
 		87E8C91E2A20F081006F3A93 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8C91D2A20F081006F3A93 /* Landmark.swift */; };
 		87E8C9202A20F166006F3A93 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8C91F2A20F166006F3A93 /* ModelData.swift */; };
 		87E8C9252A20F276006F3A93 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8C9242A20F276006F3A93 /* LandmarkRow.swift */; };
@@ -155,6 +155,7 @@
 		87C4A1052A24CDD200F0046C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87C4A1072A24CDD200F0046C /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
 		87C4A1182A24CEBD00F0046C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		87C4A11B2A24D30900F0046C /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		87E8C91D2A20F081006F3A93 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		87E8C91F2A20F166006F3A93 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		87E8C9242A20F276006F3A93 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
@@ -312,6 +313,7 @@
 				87C4A0F22A24C78900F0046C /* NotificationView.swift */,
 				87C4A0F42A24C83D00F0046C /* NotificationController.swift */,
 				87C4A0F62A24CA3100F0046C /* PushNotificationPayload.apns */,
+				87C4A11B2A24D30900F0046C /* LandmarkList.swift */,
 			);
 			path = "WatchLandmarks Watch App";
 			sourceTree = "<group>";
@@ -561,8 +563,8 @@
 				87C4A0E72A24C3F000F0046C /* Hike.swift in Sources */,
 				87C4A0E82A24C3F000F0046C /* Profile.swift in Sources */,
 				87C4A0D72A24C23F00F0046C /* ContentView.swift in Sources */,
+				87C4A11C2A24D30900F0046C /* LandmarkList.swift in Sources */,
 				87C4A0ED2A24C3F000F0046C /* LandmarksApp.swift in Sources */,
-				87C4A0EE2A24C3F000F0046C /* LandmarkList.swift in Sources */,
 				87C4A0E62A24C3F000F0046C /* ModelData.swift in Sources */,
 				87C4A0E42A24C3F000F0046C /* MapView.swift in Sources */,
 				87C4A0EA2A24C3F000F0046C /* LandmarkRow.swift in Sources */,
