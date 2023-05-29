@@ -199,6 +199,7 @@
 		87C4A0C52A24B56300F0046C /* PageView */ = {
 			isa = PBXGroup;
 			children = (
+				87C4A0C82A24B76100F0046C /* FeatureCard.swift */,
 				87C4A0C62A24B57F00F0046C /* PageViewController.swift */,
 				87C4A0CA2A24B89600F0046C /* PageView.swift */,
 			);
@@ -215,7 +216,6 @@
 				879E99332A24813B000C6166 /* Category */,
 				879E99342A248146000C6166 /* Profile */,
 				87C4A0C52A24B56300F0046C /* PageView */,
-				87C4A0C82A24B76100F0046C /* FeatureCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
