@@ -11,6 +11,17 @@ import Combine
 final class ModelData: ObservableObject { /* SwiftUI가 subscribe 하는 객체. 해당 객체가 변경되면 어떤 뷰던지 refreshing이 필요하면 갱신된다. */
     @Published var landmarks: [Landmark] = load("landmarkData.json") /* subscriber가 변화를 감지할 수 있도록 data 변화를 publishing 할 수 있도록 함 */
     var hikes: [Hike] = load("hikeData.json")
+
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+
+    var categories: [String: [Landmark]] {
+        Dictionary(
+            grouping: landmarks,
+            by: { $0.category.rawValue } /* category 이름을 키로 landmark 배열을 가지도록 그룹핑 */
+        )
+    }
 }
 
 
