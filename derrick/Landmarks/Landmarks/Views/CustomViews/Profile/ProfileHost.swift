@@ -11,7 +11,7 @@ struct ProfileHost: View {
     @Environment(\.editMode) var editMode
     @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
@@ -21,7 +21,7 @@ struct ProfileHost: View {
                         editMode?.animation().wrappedValue = .inactive
                     }
                 }
-                
+
                 Spacer()
                 EditButton()
             }
