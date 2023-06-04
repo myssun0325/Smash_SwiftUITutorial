@@ -23,12 +23,12 @@ struct LandmarkCommands: Commands {
     }
 }
 
-private struct SelectedLandmarkKey: FocusedValueKey {
+struct SelectedLandmarkKey: FocusedValueKey {
     typealias Value = Binding<Landmark>
 }
 
 extension FocusedValues {
-    var selectedLandmark: Binding<Landmark>? {
+    var selectedLandmark: SelectedLandmarkKey.Value? {
         get { self[SelectedLandmarkKey.self] }
         set { self[SelectedLandmarkKey.self] = newValue }
     }
