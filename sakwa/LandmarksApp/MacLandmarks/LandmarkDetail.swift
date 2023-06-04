@@ -18,7 +18,7 @@ struct LandmarkDetail: View {
     
     var body: some View {
         ScrollView {
-            ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
+            ZStack(alignment: .topTrailing) {
                 MapView(coordinate: landmark.locationCoordinate)
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 300)
