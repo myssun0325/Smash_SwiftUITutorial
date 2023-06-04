@@ -28,7 +28,7 @@
   .tabItem에는 Tab에 표현할 View를 만들어주면 된다
 - `accessibilityLabel`
 - `hueRotation`   
-   색조(색상)을 변경 0, 360, 720은 변화 없음 ⇒ 0~359 랑 360~719 변화는 동일
+   색조(색상)을 변경 0, 360, 720은 변화 없음 ⇒ 0 ~ 359 랑 360 ~ 719 변화는 동일
 - `.sheet` `.fullScreenCover`  
 화면 전환!!
 - `@Environment`  
