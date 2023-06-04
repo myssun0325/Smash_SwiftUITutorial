@@ -28,10 +28,12 @@
   .tabItem에는 Tab에 표현할 View를 만들어주면 된다
 - `accessibilityLabel`
 - `hueRotation`   
-   색조(색상)을 변경 0, 360, 720은 변화 없음 ⇒ 0~359 랑 360~719 변화는 동일
+   색조(색상)을 변경 0, 360, 720은 변화 없음 ⇒ 0 ~ 359 랑 360 ~ 719 변화는 동일
 - `.sheet` `.fullScreenCover`  
 화면 전환!!
-- `@Environment`
+- `@Environment`  
+환경과 관련된 여러 값을 갖고 있음
+
 - `Menu`   
 UIKit에서는 Context Menu라고 앱이나 사진을 3D 터치할 때 나오는 메뉴 뷰와 비슷  
 간단한 필터나 간단한 선택을 하는 뷰가 필요할 때 유용해보임
