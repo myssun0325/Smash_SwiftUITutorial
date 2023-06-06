@@ -1,21 +1,24 @@
 # Smash_SwiftUITutorial
 
-> 스유 공식 튜토리얼 뽀개기
+> 스유 공식 튜토리얼 뽀개기 🎯
 
+🥊
 [애플 공식 SwiftUI 튜토리얼](https://developer.apple.com/tutorials/swiftui)
 
-진행중🔥🔥
+🔥
+[iOS App Dev Tutorials](https://developer.apple.com/tutorials/app-dev-training)
+[SwiftUI Concepts Tutorials](https://developer.apple.com/tutorials/swiftui-concepts)
 
 ## 목표
 ---
 - SwiftUI 공식 튜토리얼 퀵하게 뽀개기
-- SwiftUI 8개의 챕터 (+ Next steps의 Network data 챕터)
 - 공식 튜토리얼에 등장하는 주제, 키워드 등을 줍줍한다. (다음에 이를 확장하여 Deep dive)
 - 서로의 접근과 관점, 생각, 피드백 등 공유가 모임의 중점
 
 ## 진행방식
 ---
-- 평일 월~금 (2챕터) + 주말(2챕터) 씩 진행해서 2주 예상
-- 결과물: 튜토리얼 완성물 + 튜토리얼을 진행하면서 챕터에서 배운 내용 개인의 생각, 챕터에 대한 피드백, 참고 링크, advanced, 더 공부할만한 것, 키워드 등을 공유
-- 온라인 모임 (평일챕터 / 주말챕터)
+- 자유
+- 주 1회 온라인 모임
+- 튜토리얼 진행 완성물
+- 챕터에서 배운 내용 정리 or 생각, 질문, 공유거리 등
 - 눈치보지 않기 (나의 속도 유지하기)
