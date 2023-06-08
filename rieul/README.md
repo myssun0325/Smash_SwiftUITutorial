@@ -1,1 +1,2 @@
-[Landmarks 정리](https://rieul.tech/c1cb83d4-6348-5f91-c0f3-19feb51cf9be)
+- [Landmarks 정리](https://rieul.tech/c1cb83d4-6348-5f91-c0f3-19feb51cf9be)
+- [Scrumdinger 정리](https://rieul.tech/e8c80540-840f-f9c0-56cf-b5947af89429)
