@@ -21,7 +21,6 @@ struct ProfileSummary: View {
                 Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
                 Text("Goal Date: ") + Text(profile.goalDate, style: .date)
                 
-                
                 Divider()
                 
                 VStack(alignment: .leading) {
