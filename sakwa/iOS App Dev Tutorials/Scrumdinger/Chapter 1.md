@@ -50,14 +50,14 @@ struct DonutMenu: View {
 
 struct DonutView: View {
   @Bindable var donut: Donut
-<!--   var donut: Donut -->
+  // var donut: Donut
 
   var body: some View {
     TextField("이름", text: $donut.name)
-<!--     Text(donut.name) -->
+    // Text(donut.name)
   }
 }
-``
+```
 
 
 **Property wrapper 사용 기준**
@@ -66,4 +66,4 @@ struct DonutView: View {
 
 > 뒤에 Advanced Use나 ObservableObject를 @Observable로 바꾸는 내용도 있는데 관심있으시며 꼭꼭!! 챙겨보는시는 강추 드립니다!!   
 
-출처 : https://developer.apple.com/wwdc23/10149
+WWDC 영상 - Discover Observation in SwiftUI : https://developer.apple.com/wwdc23/10149
