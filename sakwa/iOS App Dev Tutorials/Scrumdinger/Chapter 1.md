@@ -9,6 +9,7 @@
 @Observable class FoodTruckModel {
   var order: [Order] = []
   var donuts = Donut.all
+  var orderCount: Int { orders.count } 
 }
 
 struct DonutMenu: View {
@@ -17,36 +18,52 @@ struct DonutMenu: View {
   var body: some View {
     List {
       Section("Donuts") {
-        // 여기!! model 프로퍼티에 접근 시 해당 프로퍼티에 대한 모드 액세스를 탐지할 수 있다.
-        // 값이 변하면 UI가 업데이트!
+        // model 프로퍼티에 접근 시 해당 프로퍼티(donuts?)에 대한 모드 액세스를 탐지할 수 있다.
         ForEach(model.donuts) { donut in
           Text(donut.name)
         }
         Button("Add new donut") {
+           // 값이 변하면 UI가 업데이트!
           model.addDonut()
         }
+      }
+      
+      Section("Orders") {
+        // LabeldContent를 그려주기 위해서 Model에 접근하게 되고 (orders.count) 때문에 orders 프로퍼티에 접근 가능
+        LabeledContent("Count", value: "\(model.orderCount)")
       }
     }
   }
 }
 ```
-> 연산 프로퍼티 관련해서도 연산 프로퍼티 값이 변하면 UI 업데이트 된다.
+> 연산 프로퍼티 관련해서도 연산 프로퍼티 값이 변하면 UI 업데이트 된다. (Orders 부분) 
 
 
 ## SwiftUI Property wrappers
 ### @Bindable
+단순하게 바인딩을 가능하게 만들어준다.  
+@Binding에서 사용했던 것 처러 `$` 붙여주면 된다.
+```Swift
+@Observable class Donut {
+  var name: String
+}
+
+struct DonutView: View {
+  @Bindable var donut: Donut
+<!--   var donut: Donut -->
+
+  var body: some View {
+    TextField("이름", text: $donut.name)
+<!--     Text(donut.name) -->
+  }
+}
+``
 
 
 **Property wrapper 사용 기준**
 <img width="1329" alt="스크린샷 2023-06-09 22 15 31" src="https://github.com/myssun0325/Smash_SwiftUITutorial/assets/41609708/312a0cc2-7d6c-40e1-a0e3-148db646e938">
 
 
-
-
-## Advanced uses
-이건 더 공부해보고 
-
-## ObservableObject
-
+> 뒤에 Advanced Use나 ObservableObject를 @Observable로 바꾸는 내용도 있는데 관심있으시며 꼭꼭!! 챙겨보는시는 강추 드립니다!!   
 
 출처 : https://developer.apple.com/wwdc23/10149
