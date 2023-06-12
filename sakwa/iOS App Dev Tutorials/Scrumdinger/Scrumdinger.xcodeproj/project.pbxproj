@@ -11,6 +11,10 @@
 		7618701E2A2F252400CC0784 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618701D2A2F252400CC0784 /* MeetingView.swift */; };
 		761870202A2F252500CC0784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7618701F2A2F252500CC0784 /* Assets.xcassets */; };
 		761870232A2F252500CC0784 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761870222A2F252500CC0784 /* Preview Assets.xcassets */; };
+		76F18A9F2A35CDD200AB4D63 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18A9E2A35CDD200AB4D63 /* Theme.swift */; };
+		76F18AA12A374EAF00AB4D63 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AA02A374EAF00AB4D63 /* DailyScrum.swift */; };
+		76F18AA32A37513400AB4D63 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AA22A37513400AB4D63 /* CardView.swift */; };
+		76F18AA72A375D3400AB4D63 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AA62A375D3400AB4D63 /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		7618701D2A2F252400CC0784 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		7618701F2A2F252500CC0784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		761870222A2F252500CC0784 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76F18A9E2A35CDD200AB4D63 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		76F18AA02A374EAF00AB4D63 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		76F18AA22A37513400AB4D63 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		76F18AA62A375D3400AB4D63 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,13 @@
 		7618701A2A2F252400CC0784 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				76F18A9D2A35CDC200AB4D63 /* Models */,
 				7618701B2A2F252400CC0784 /* ScrumdingerApp.swift */,
 				7618701D2A2F252400CC0784 /* MeetingView.swift */,
 				7618701F2A2F252500CC0784 /* Assets.xcassets */,
 				761870212A2F252500CC0784 /* Preview Content */,
+				76F18AA22A37513400AB4D63 /* CardView.swift */,
+				76F18AA62A375D3400AB4D63 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -65,6 +76,15 @@
 				761870222A2F252500CC0784 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76F18A9D2A35CDC200AB4D63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76F18A9E2A35CDD200AB4D63 /* Theme.swift */,
+				76F18AA02A374EAF00AB4D63 /* DailyScrum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F18AA12A374EAF00AB4D63 /* DailyScrum.swift in Sources */,
+				76F18AA72A375D3400AB4D63 /* TrailingIconLabelStyle.swift in Sources */,
+				76F18A9F2A35CDD200AB4D63 /* Theme.swift in Sources */,
 				7618701E2A2F252400CC0784 /* MeetingView.swift in Sources */,
 				7618701C2A2F252400CC0784 /* ScrumdingerApp.swift in Sources */,
+				76F18AA32A37513400AB4D63 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
