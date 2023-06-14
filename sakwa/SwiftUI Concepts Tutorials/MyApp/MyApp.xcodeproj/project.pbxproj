@@ -12,6 +12,7 @@
 		760E437C2A2E410900BD3C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760E437B2A2E410900BD3C9A /* Assets.xcassets */; };
 		760E437F2A2E410900BD3C9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760E437E2A2E410900BD3C9A /* Preview Assets.xcassets */; };
 		76F18AAB2A38A38100AB4D63 /* KeywordBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */; };
+		76F18AAD2A39EACB00AB4D63 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		760E437B2A2E410900BD3C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		760E437E2A2E410900BD3C9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordBubble.swift; sourceTree = "<group>"; };
+		76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				760E437B2A2E410900BD3C9A /* Assets.xcassets */,
 				760E437D2A2E410900BD3C9A /* Preview Content */,
 				76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */,
+				76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F18AAD2A39EACB00AB4D63 /* CaptionedPhoto.swift in Sources */,
 				76F18AAB2A38A38100AB4D63 /* KeywordBubble.swift in Sources */,
 				760E437A2A2E410700BD3C9A /* ContentView.swift in Sources */,
 				760E43782A2E410700BD3C9A /* MyAppApp.swift in Sources */,
