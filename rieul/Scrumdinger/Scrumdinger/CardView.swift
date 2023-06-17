@@ -19,8 +19,12 @@ struct CardView: View {
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                    .padding(.trailing, 20)
             }
+            .font(.caption)
         }
+        .padding()
+        .foregroundColor(scrum.theme.accentColor)
     }
 }
 
