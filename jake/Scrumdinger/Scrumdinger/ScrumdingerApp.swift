@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct ScrumdingerApp: App {
     var body: some Scene {
-        WindowGroup {
-            MeetingView()
+        WindowGroup { /* primitive scene들 중 하나 */
+            ScrumsView(scrums: DailyScrum.sampleData)
         }
     }
 }
