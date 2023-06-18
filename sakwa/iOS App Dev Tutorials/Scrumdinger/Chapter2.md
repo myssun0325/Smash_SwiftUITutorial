@@ -4,7 +4,7 @@
 
 `.listRowBackground()`  
 이 modifier는 매개변수로 색상 말고 view를 넣을 수가 있다!
-```Swift!
+```Swift
 CardView()
     .listRowBackground(
         VStack {
