@@ -13,4 +13,6 @@ CardView()
         }
     )
 ```
+<img width="301" alt="스크린샷 2023-06-18 21 05 38" src="https://github.com/myssun0325/Smash_SwiftUITutorial/assets/41609708/efc9520c-d315-4083-88c9-c68e43f900e4">
+
 
