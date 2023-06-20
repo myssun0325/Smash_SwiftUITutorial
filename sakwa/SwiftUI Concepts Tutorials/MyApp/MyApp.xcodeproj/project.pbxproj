@@ -13,6 +13,18 @@
 		760E437F2A2E410900BD3C9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760E437E2A2E410900BD3C9A /* Preview Assets.xcassets */; };
 		76F18AAB2A38A38100AB4D63 /* KeywordBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */; };
 		76F18AAD2A39EACB00AB4D63 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */; };
+		76F18AAF2A3EDF0300AB4D63 /* IfElseTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AAE2A3EDF0300AB4D63 /* IfElseTrain.swift */; };
+		76F18AB12A3EE87C00AB4D63 /* EventTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AB02A3EE87C00AB4D63 /* EventTile.swift */; };
+		76F18AB32A3EEFBE00AB4D63 /* TrainCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AB22A3EEFBE00AB4D63 /* TrainCar.swift */; };
+		76F18AB52A40AF4000AB4D63 /* DefaultSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AB42A40AF4000AB4D63 /* DefaultSpacing.swift */; };
+		76F18AB72A41D70600AB4D63 /* SpecificSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AB62A41D70600AB4D63 /* SpecificSpacing.swift */; };
+		76F18AB92A41D75100AB4D63 /* ZeroSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AB82A41D75100AB4D63 /* ZeroSpacing.swift */; };
+		76F18ABB2A41D78A00AB4D63 /* PaddingSomeEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18ABA2A41D78A00AB4D63 /* PaddingSomeEdges.swift */; };
+		76F18ABD2A41D7A700AB4D63 /* SpecificPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18ABC2A41D7A700AB4D63 /* SpecificPadding.swift */; };
+		76F18ABF2A41D7BB00AB4D63 /* PaddingTheContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18ABE2A41D7BB00AB4D63 /* PaddingTheContainer.swift */; };
+		76F18AC12A41D7D400AB4D63 /* AddingSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AC02A41D7D400AB4D63 /* AddingSpacer.swift */; };
+		76F18AC32A41D7FA00AB4D63 /* AddingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AC22A41D7FA00AB4D63 /* AddingPlaceholder.swift */; };
+		76F18AC52A41D81800AB4D63 /* StackingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F18AC42A41D81800AB4D63 /* StackingPlaceholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +35,18 @@
 		760E437E2A2E410900BD3C9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordBubble.swift; sourceTree = "<group>"; };
 		76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
+		76F18AAE2A3EDF0300AB4D63 /* IfElseTrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfElseTrain.swift; sourceTree = "<group>"; };
+		76F18AB02A3EE87C00AB4D63 /* EventTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTile.swift; sourceTree = "<group>"; };
+		76F18AB22A3EEFBE00AB4D63 /* TrainCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCar.swift; sourceTree = "<group>"; };
+		76F18AB42A40AF4000AB4D63 /* DefaultSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpacing.swift; sourceTree = "<group>"; };
+		76F18AB62A41D70600AB4D63 /* SpecificSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificSpacing.swift; sourceTree = "<group>"; };
+		76F18AB82A41D75100AB4D63 /* ZeroSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroSpacing.swift; sourceTree = "<group>"; };
+		76F18ABA2A41D78A00AB4D63 /* PaddingSomeEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingSomeEdges.swift; sourceTree = "<group>"; };
+		76F18ABC2A41D7A700AB4D63 /* SpecificPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificPadding.swift; sourceTree = "<group>"; };
+		76F18ABE2A41D7BB00AB4D63 /* PaddingTheContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTheContainer.swift; sourceTree = "<group>"; };
+		76F18AC02A41D7D400AB4D63 /* AddingSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingSpacer.swift; sourceTree = "<group>"; };
+		76F18AC22A41D7FA00AB4D63 /* AddingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingPlaceholder.swift; sourceTree = "<group>"; };
+		76F18AC42A41D81800AB4D63 /* StackingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackingPlaceholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +85,18 @@
 				760E437D2A2E410900BD3C9A /* Preview Content */,
 				76F18AAA2A38A38100AB4D63 /* KeywordBubble.swift */,
 				76F18AAC2A39EACB00AB4D63 /* CaptionedPhoto.swift */,
+				76F18AAE2A3EDF0300AB4D63 /* IfElseTrain.swift */,
+				76F18AB02A3EE87C00AB4D63 /* EventTile.swift */,
+				76F18AB22A3EEFBE00AB4D63 /* TrainCar.swift */,
+				76F18AB42A40AF4000AB4D63 /* DefaultSpacing.swift */,
+				76F18ABA2A41D78A00AB4D63 /* PaddingSomeEdges.swift */,
+				76F18ABC2A41D7A700AB4D63 /* SpecificPadding.swift */,
+				76F18ABE2A41D7BB00AB4D63 /* PaddingTheContainer.swift */,
+				76F18AC02A41D7D400AB4D63 /* AddingSpacer.swift */,
+				76F18AC22A41D7FA00AB4D63 /* AddingPlaceholder.swift */,
+				76F18AC42A41D81800AB4D63 /* StackingPlaceholder.swift */,
+				76F18AB62A41D70600AB4D63 /* SpecificSpacing.swift */,
+				76F18AB82A41D75100AB4D63 /* ZeroSpacing.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -143,10 +179,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F18AB12A3EE87C00AB4D63 /* EventTile.swift in Sources */,
+				76F18ABD2A41D7A700AB4D63 /* SpecificPadding.swift in Sources */,
+				76F18AC12A41D7D400AB4D63 /* AddingSpacer.swift in Sources */,
+				76F18AB92A41D75100AB4D63 /* ZeroSpacing.swift in Sources */,
+				76F18AB52A40AF4000AB4D63 /* DefaultSpacing.swift in Sources */,
 				76F18AAD2A39EACB00AB4D63 /* CaptionedPhoto.swift in Sources */,
+				76F18AAF2A3EDF0300AB4D63 /* IfElseTrain.swift in Sources */,
 				76F18AAB2A38A38100AB4D63 /* KeywordBubble.swift in Sources */,
+				76F18AC32A41D7FA00AB4D63 /* AddingPlaceholder.swift in Sources */,
 				760E437A2A2E410700BD3C9A /* ContentView.swift in Sources */,
+				76F18ABB2A41D78A00AB4D63 /* PaddingSomeEdges.swift in Sources */,
+				76F18AC52A41D81800AB4D63 /* StackingPlaceholder.swift in Sources */,
+				76F18AB72A41D70600AB4D63 /* SpecificSpacing.swift in Sources */,
 				760E43782A2E410700BD3C9A /* MyAppApp.swift in Sources */,
+				76F18AB32A3EEFBE00AB4D63 /* TrainCar.swift in Sources */,
+				76F18ABF2A41D7BB00AB4D63 /* PaddingTheContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
