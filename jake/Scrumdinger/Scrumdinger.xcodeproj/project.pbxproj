@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E201FC82A483ADF009C8362 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E201FC72A483ADF009C8362 /* DetailView.swift */; };
+		8E201FCA2A48467B009C8362 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E201FC92A48467B009C8362 /* DetailEditView.swift */; };
 		8E96A9212A321BC400FA12B0 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96A9202A321BC400FA12B0 /* ScrumdingerApp.swift */; };
 		8E96A9232A321BC400FA12B0 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96A9222A321BC400FA12B0 /* MeetingView.swift */; };
 		8E96A9252A321BC600FA12B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E96A9242A321BC600FA12B0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		8E201FC72A483ADF009C8362 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8E201FC92A48467B009C8362 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		8E96A91D2A321BC400FA12B0 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E96A9202A321BC400FA12B0 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		8E96A9222A321BC400FA12B0 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				8EED72BE2A3E92DB00775948 /* CardView.swift */,
 				8EED72C22A3EB2B000775948 /* ScrumsView.swift */,
 				8E201FC72A483ADF009C8362 /* DetailView.swift */,
+				8E201FC92A48467B009C8362 /* DetailEditView.swift */,
 				8E96A9242A321BC600FA12B0 /* Assets.xcassets */,
 				8E96A9262A321BC600FA12B0 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 			files = (
 				8EED72BD2A3E8F8A00775948 /* DailyScrum.swift in Sources */,
 				8E201FC82A483ADF009C8362 /* DetailView.swift in Sources */,
+				8E201FCA2A48467B009C8362 /* DetailEditView.swift in Sources */,
 				8EED72C12A3E996F00775948 /* TrailingIconLabelStyle.swift in Sources */,
 				8EED72BB2A3E8A7600775948 /* Theme.swift in Sources */,
 				8EED72C32A3EB2B000775948 /* ScrumsView.swift in Sources */,
