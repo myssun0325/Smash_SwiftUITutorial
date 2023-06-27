@@ -59,7 +59,13 @@ struct DetailEditView: View {
         }
     }
 }
+//
+//#Preview {
+//    DetailEditView()
+//}
 
-#Preview {
-    DetailEditView()
+struct DetailEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailEditView()
+    }
 }

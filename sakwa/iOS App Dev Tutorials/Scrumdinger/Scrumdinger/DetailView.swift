@@ -81,8 +81,17 @@ struct DetailView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        DetailView(scrum: DailyScrum.sampleData[0])
+//#Preview {
+//    NavigationStack {
+//        DetailView(scrum: DailyScrum.sampleData[0])
+//    }
+//}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            DetailView(scrum: DailyScrum.sampleData[0])
+        }
     }
 }
+

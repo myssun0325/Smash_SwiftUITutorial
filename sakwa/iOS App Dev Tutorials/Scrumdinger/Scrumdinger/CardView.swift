@@ -35,8 +35,17 @@ struct CardView: View {
     }
 }
 
-#Preview {
-    CardView(scrum: DailyScrum.sampleData[0])
-        .background(DailyScrum.sampleData[0].theme.mainColor)
-        .previewLayout(.fixed(width: 400, height: 400))
+//#Preview {
+//    CardView(scrum: DailyScrum.sampleData[0])
+//        .background(DailyScrum.sampleData[0].theme.mainColor)
+//        .previewLayout(.fixed(width: 400, height: 400))
+//}
+
+struct CardView_Previews: PreviewProvider {
+    static var previews: some View {
+        CardView(scrum: DailyScrum.sampleData[0])
+            .background(DailyScrum.sampleData[0].theme.mainColor)
+            .previewLayout(.fixed(width: 400, height: 400))
+    }
 }
+
