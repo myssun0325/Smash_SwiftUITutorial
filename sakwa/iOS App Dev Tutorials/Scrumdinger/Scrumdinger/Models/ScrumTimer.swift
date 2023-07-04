@@ -3,11 +3,14 @@ See LICENSE folder for this sample’s licensing information.
 */
 
 import Foundation
+import Observation
 
 /// Keeps time for a daily scrum meeting. Keep track of the total meeting time, the time for each speaker, and the name of the current speaker.
-
-@MainActor
-final class ScrumTimer: ObservableObject {
+///
+///
+//@MainActor
+@Observable
+class ScrumTimer {
     /// A struct to keep track of meeting attendees during a meeting.
     struct Speaker: Identifiable {
         /// The attendee name.
@@ -19,20 +22,23 @@ final class ScrumTimer: ObservableObject {
     }
     
     /// The name of the meeting attendee who is speaking.
-    @Published var activeSpeaker = ""
+//    @Published var activeSpeaker = ""
+    var activeSpeaker = ""
     /// The number of seconds since the beginning of the meeting.
-    @Published var secondsElapsed = 0
+//    @Published var secondsElapsed = 0
+    var secondsElapsed = 0
     /// The number of seconds until all attendees have had a turn to speak.
-    @Published var secondsRemaining = 0
+//    @Published var secondsRemaining = 0
+    var secondsRemaining = 0
     /// All meeting attendees, listed in the order they will speak.
     private(set) var speakers: [Speaker] = []
 
     /// The scrum meeting length.
-    private(set) var lengthInMinutes: Int
+    private(set) var lengthInMinutes: Int = 0
     /// A closure that is executed when a new attendee begins speaking.
-    var speakerChangedAction: (() -> Void)?
+    var speakerChangedAction: (() -> Void)? = nil
 
-    private weak var timer: Timer?
+    private weak var timer: Timer? = nil
     private var timerStopped = false
     private var frequency: TimeInterval { 1.0 / 60.0 }
     private var lengthInSeconds: Int { lengthInMinutes * 60 }
@@ -44,7 +50,7 @@ final class ScrumTimer: ObservableObject {
     private var speakerText: String {
         return "Speaker \(speakerIndex + 1): " + speakers[speakerIndex].name
     }
-    private var startDate: Date?
+    private var startDate: Date? = nil
     
     /**
      Initialize a new timer. Initializing a time with no arguments creates a ScrumTimer with no attendees and zero length.
@@ -59,6 +65,8 @@ final class ScrumTimer: ObservableObject {
         self.speakers = attendees.speakers
         secondsRemaining = lengthInSeconds
         activeSpeaker = speakerText
+        
+        print("init")
     }
     
     /// Start the timer.
@@ -98,24 +106,26 @@ final class ScrumTimer: ObservableObject {
         startDate = Date()
     }
 
-    nonisolated private func update() {
-
-        Task { @MainActor in
-            guard let startDate,
-                  !timerStopped else { return }
-            let secondsElapsed = Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
-            secondsElapsedForSpeaker = secondsElapsed
-            self.secondsElapsed = secondsPerSpeaker * speakerIndex + secondsElapsedForSpeaker
-            guard secondsElapsed <= secondsPerSpeaker else {
-                return
-            }
-            secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
-
-            if secondsElapsedForSpeaker >= secondsPerSpeaker {
-                changeToSpeaker(at: speakerIndex + 1)
-                speakerChangedAction?()
-            }
+    private func update() {
+//        Task { @MainActor in
+        guard let startDate,
+              !timerStopped else { return }
+        let secondsElapsed = Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
+        secondsElapsedForSpeaker = secondsElapsed
+        self.secondsElapsed = secondsPerSpeaker * speakerIndex + secondsElapsedForSpeaker
+        
+        guard secondsElapsed <= secondsPerSpeaker else {
+            return
         }
+        
+        secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
+        
+
+        if secondsElapsedForSpeaker >= secondsPerSpeaker {
+            changeToSpeaker(at: speakerIndex + 1)
+            speakerChangedAction?()
+        }
+//        }
     }
     
     /**
