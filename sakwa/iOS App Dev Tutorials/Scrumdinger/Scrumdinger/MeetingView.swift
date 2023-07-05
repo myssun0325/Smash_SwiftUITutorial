@@ -10,8 +10,8 @@ import AVFoundation
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
-//    @StateObject var scrumTimer = ScrumTimer()
-    @State var scrumTimer = ScrumTimer()
+    @StateObject var scrumTimer = ScrumTimer()
+//    @State var scrumTimer = ScrumTimer()
     
 //    private var player: AVPlayer {
 //        AVPlayer.sharedDingPlayer
@@ -69,13 +69,13 @@ struct MeetingView: View {
     }
 }
 
-//struct MettingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
-//    }
-//}
-
-#Preview {
-    MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+struct MettingView_Previews: PreviewProvider {
+    static var previews: some View {
+        MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+    }
 }
+
+//#Preview {
+//    MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+//}
 
