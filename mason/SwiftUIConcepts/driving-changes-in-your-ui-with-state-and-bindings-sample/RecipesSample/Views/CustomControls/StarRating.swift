@@ -21,3 +21,16 @@ struct StarRating: View {
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+struct Person {
+    let age: Int
+    let name: String
+    
+    init(age: Int = 0, name: String) {
+        self.age = age
+        self.name = name
+    }
+}
+>>>>>>> 58e14f7bf35d4af40126536412480f12f9ddaab0

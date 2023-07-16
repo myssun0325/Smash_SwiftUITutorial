@@ -4,11 +4,15 @@ struct ContentListView: View {
     @Binding var selection: Recipe.ID?
     let selectedSidebarItem: SidebarItem
     @EnvironmentObject private var recipeBox: RecipeBox
+<<<<<<< HEAD
     @State private var recipeEditorConfig = RecipeEditorConfig() {
         didSet {
             print("Mason🍎🍎🍎: \(recipeEditorConfig)")
         }
     }
+=======
+    @State private var recipeEditorConfig = RecipeEditorConfig()
+>>>>>>> 58e14f7bf35d4af40126536412480f12f9ddaab0
 
     var body: some View {
         RecipeListView(selection: $selection, selectedSidebarItem: selectedSidebarItem)

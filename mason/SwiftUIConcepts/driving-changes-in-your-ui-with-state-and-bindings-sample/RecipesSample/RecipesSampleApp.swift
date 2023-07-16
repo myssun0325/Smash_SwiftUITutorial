@@ -2,6 +2,7 @@ import SwiftUI
 
 @main
 struct RecipesSampleApp: App {
+<<<<<<< HEAD
 //    @StateObject private var recipeBox = RecipeBox(recipes: load("recipeData.json"))
 //    @State private var selectedSidebarItem: SidebarItem? = SidebarItem.all
 //    @State private var selectedRecipeId: Recipe.ID?
@@ -86,3 +87,22 @@ struct ContentView: View {
 //        }
 //    }
 //}
+=======
+    @StateObject private var recipeBox = RecipeBox(recipes: load("recipeData.json"))
+    @State private var selectedSidebarItem: SidebarItem? = SidebarItem.all
+    @State private var selectedRecipeId: Recipe.ID?
+
+    var body: some Scene {
+        WindowGroup {
+            NavigationSplitView {
+                SidebarView(selection: $selectedSidebarItem, recipeBox: recipeBox)
+            } content: {
+                ContentListView(selection: $selectedRecipeId, selectedSidebarItem: selectedSidebarItem ?? SidebarItem.all)
+            } detail: {
+                DetailView(recipeId: $selectedRecipeId)
+            }
+            .environmentObject(recipeBox)
+        }
+    }
+}
+>>>>>>> 58e14f7bf35d4af40126536412480f12f9ddaab0

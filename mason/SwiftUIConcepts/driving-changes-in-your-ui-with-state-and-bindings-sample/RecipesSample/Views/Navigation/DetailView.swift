@@ -3,7 +3,11 @@ import SwiftUI
 struct DetailView: View {
     @Binding var recipeId: Recipe.ID?
     @EnvironmentObject private var recipeBox: RecipeBox
+<<<<<<< HEAD
     @State private var showDeleteConfirmation = false
+=======
+    @State var showDeleteConfirmation = false
+>>>>>>> 58e14f7bf35d4af40126536412480f12f9ddaab0
     
     private var recipe: Binding<Recipe> {
         Binding {

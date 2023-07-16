@@ -23,7 +23,11 @@ struct SidebarView: View {
     @ObservedObject var recipeBox: RecipeBox
     
     var body: some View {
+<<<<<<< HEAD
         return List(selection: $selection) {
+=======
+        List(selection: $selection) {
+>>>>>>> 58e14f7bf35d4af40126536412480f12f9ddaab0
             Section("Library") {
                 NavigationLink(value: SidebarItem.all) {
                     Text(SidebarItem.all.title)
