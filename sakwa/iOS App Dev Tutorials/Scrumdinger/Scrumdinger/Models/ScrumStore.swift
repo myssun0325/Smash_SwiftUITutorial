@@ -23,6 +23,7 @@ class ScrumStore: ObservableObject {
     
     func load() async throws {
         let task = Task<[DailyScrum], Error> {
+            // 2)
             let fileURL = try Self.fileURL()
             guard let data = try? Data(contentsOf: fileURL) else {
                 return []
@@ -31,7 +32,8 @@ class ScrumStore: ObservableObject {
             return dailyScrums
         }
         
-        // TODO: task가 끝나면 task의 반환 값을 반환?, task.value는 뭘 반환하지?
+        // 1)
+        // task.value의 값([DailyScurm])을 가져오기 위해서 위의 task의 클로저 부분이 실행이 되는듯?!
         let scrums = try await task.value
         self.scrums = scrums
     }
